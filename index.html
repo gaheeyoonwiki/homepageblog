@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>상냥한주디 X 위키북스</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      function makeAddress() {
+        for(var i=1; i<6; i++) {
+          console.log('===========================');
+          var text = $('#linkBox' + i ).html();
+          console.log(text);
+          var link = $('#link' + i ).val();
+
+          text = text.replace('메뉴링크주소', link)
+          console.log(text);
+          $('#linkBox' + i ).html(text);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="bookInfo"> 여기에는 책 홍보를 하면 어떨까요? 주디님 간략 소개, 책 소개가 들어가면 좋겠습니다. </div>
+
+    메뉴 1 링크 주소 : <input type="text" id="link1" /> <br><br>
+    메뉴 2 링크 주소 : <input type="text" id="link2" /> <br><br>
+    메뉴 3 링크 주소 : <input type="text" id="link3" /> <br><br>
+    메뉴 4 링크 주소 : <input type="text" id="link4" /> <br><br>
+    메뉴 5 링크 주소 : <input type="text" id="link5" /> <br><br>
+
+    <button type="button" name="button" onclick="makeAddress();">주소 만들기</button> <br><br>
+
+    <textarea name="name" rows="8" cols="80" id="linkBox1">
+&lt;img src="https://blogfiles.pstatic.net/MjAyMTAyMTRfMTg1/MDAxNjEzMjMzMjE1OTYw.a4PGGWwh0qUFpOR9ohOjJeHDExuy_HM2sLcugHgW_Bsg.WiQiQ2CnWpLSb1f7nsx6d07_rHLTKprSCa9a4PPyaMog.PNG.melon104/transp.png?type=w3" width="170px" height="160px" usemap="#m01" border="0" /&gt;
+&lt;map name="m01"&gt;
+  &lt;area shape="rect" coords="0,36,170,160" href="메뉴링크주소" target="_top" /&gt;
+&lt;/map&gt;
+    </textarea>
+
+    <textarea name="name" rows="8" cols="80" id="linkBox2">
+&lt;img src="https://blogfiles.pstatic.net/MjAyMTAyMTRfMTg1/MDAxNjEzMjMzMjE1OTYw.a4PGGWwh0qUFpOR9ohOjJeHDExuy_HM2sLcugHgW_Bsg.WiQiQ2CnWpLSb1f7nsx6d07_rHLTKprSCa9a4PPyaMog.PNG.melon104/transp.png?type=w3
+" width="170px" height="160px" usemap="#m02" border="0" /&gt;
+
+&lt;map name="m02"&gt;
+   &lt;area shape="rect" coords="0,36,170,160" href="메뉴링크주소" target="_top" /&gt;
+&lt;/map&gt;
+    </textarea>
+
+    <textarea name="name" rows="8" cols="80" id="linkBox3">
+&lt;img src="https://blogfiles.pstatic.net/MjAyMTAyMTRfMTg1/MDAxNjEzMjMzMjE1OTYw.a4PGGWwh0qUFpOR9ohOjJeHDExuy_HM2sLcugHgW_Bsg.WiQiQ2CnWpLSb1f7nsx6d07_rHLTKprSCa9a4PPyaMog.PNG.melon104/transp.png?type=w3
+" width="170px" height="160px" usemap="#m03" border="0" /&gt;
+
+&lt;map name="m03"&gt;
+   &lt;area shape="rect" coords="0,36,170,160" href="메뉴링크주소" target="_top" /&gt;
+&lt;/map&gt;
+    </textarea>
+
+    <textarea name="name" rows="8" cols="80" id="linkBox4">
+&lt;img src="https://blogfiles.pstatic.net/MjAyMTAyMTRfMTg1/MDAxNjEzMjMzMjE1OTYw.a4PGGWwh0qUFpOR9ohOjJeHDExuy_HM2sLcugHgW_Bsg.WiQiQ2CnWpLSb1f7nsx6d07_rHLTKprSCa9a4PPyaMog.PNG.melon104/transp.png?type=w3
+" width="170px" height="160px" usemap="#m04" border="0" /&gt;
+
+&lt;map name="m04"&gt;
+   &lt;area shape="rect" coords="0,36,170,160" href="메뉴링크주소" target="_top" /&gt;
+&lt;/map&gt;
+    </textarea>
+
+    <textarea name="name" rows="8" cols="80" id="linkBox5">
+&lt;img src="https://blogfiles.pstatic.net/MjAyMTAyMTRfMTg1/MDAxNjEzMjMzMjE1OTYw.a4PGGWwh0qUFpOR9ohOjJeHDExuy_HM2sLcugHgW_Bsg.WiQiQ2CnWpLSb1f7nsx6d07_rHLTKprSCa9a4PPyaMog.PNG.melon104/transp.png?type=w3
+" width="170px" height="160px" usemap="#m05" border="0" /&gt;
+
+&lt;map name="m05"&gt;
+   &lt;area shape="rect" coords="0,0,907,160" href="메뉴링크주소" target="_blank" /&gt;
+&lt;/map&gt;
+    </textarea>
+
+  </body>
+</html>
